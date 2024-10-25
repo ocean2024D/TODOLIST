@@ -20,7 +20,7 @@ function addTodo() {
     ToDoList.push(AddInput);
     localStorage.setItem("todos", JSON.stringify(ToDoList));
     createElements();
- AddInput= "";
+    document.querySelector("#input").value = "";
   }
 }
 
